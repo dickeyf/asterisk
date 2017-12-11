@@ -7,6 +7,7 @@ mkdir -p staging
 ./configure --prefix=`pwd`/staging
 make
 make install
+make samples
 
 cat << EOF > staging/start.sh
 #!/bin/bash -e
